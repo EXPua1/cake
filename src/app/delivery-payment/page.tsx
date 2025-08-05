@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/Card'
 import { Button } from '@/components/ui/Button'
-import { CheckCircle, Truck, Clock, CreditCard, DollarSign, Smartphone } from 'lucide-react'
+import { CheckCircle, Truck, Clock } from 'lucide-react'
 
 const deliveryOptions = [
     {
@@ -255,7 +255,7 @@ export default function DeliveryPaymentPage() {
                                 Looking for help?
                             </CardTitle>
                             <CardDescription className="text-lg" style={{ color: 'var(--gray)' }}>
-                                Leave your number, and I'll get in touch with you shortly to provide a consultation.
+                                Leave your number, and I&apos;ll get in touch with you shortly to provide a consultation.
                             </CardDescription>
                         </CardHeader>
                         <CardContent>
