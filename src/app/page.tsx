@@ -292,15 +292,16 @@ export default function HomePage() {
               </h2>
               <div className="space-y-4" style={{ color: 'var(--gray)' }}>
                 <p>
-                  Привет! Меня зовут Анна, и я кондитер с многолетним опытом создания уникальных тортов и десертов.
+                  Hello! My name is Katya, and I&apos;m the founder of La Crème Patisserie, where we sweeten your celebrations.
                 </p>
                 <p>
-                  Каждый торт — это произведение искусства, созданное с любовью и вниманием к деталям.
-                  Я использую только натуральные ингредиенты высшего качества, чтобы каждый кусочек был незабываемым.
+                  My love for cooking began in childhood, but my true passion for creating desserts blossomed a few years ago when I started experimenting with recipes for my loved ones.
                 </p>
                 <p>
-                  Моя специализация — это персонализированные торты для особых событий: дни рождения,
-                  свадьбы, годовщины и другие важные моменты в вашей жизни.
+                  The idea to create La Crème Patisserie was born from my passion for the lavender color and a dream of France. The name combines the delicacy of cream with a French flair, embodying my vision of the perfect dessert. I&apos;m always striving to improve, learning from professionals and continuously honing my skills to bring you new taste discoveries.
+                </p>
+                <p>
+                  Over the years, I have had the great pleasure of baking for many of you, and this inspires me to create even more sweet masterpieces. I would be delighted to welcome you as a regular customer and to create unforgettable delicious moments together!
                 </p>
               </div>
               <Button className="mt-6" asChild>
@@ -341,6 +342,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-    </div>
-  )
+    </div >
+  ) 
 }
