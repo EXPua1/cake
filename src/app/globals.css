@@ -1,0 +1,203 @@
+@import "tailwindcss";
+
+:root {
+  /* Colors */
+  --black: #222;
+  --bg: #fdf7ff;
+  --white: #fff;
+  --purple: #b094ab;
+  --dark-purple: #8e7489;
+  --disable: #9e9e9e;
+  --btn-color: #323954;
+  --purple2: #936893;
+  --gray: #777;
+  --red: #ff4258;
+  --dsi-calendar: #c8c8c8;
+  
+  /* Fonts */
+  --font-family: var(--font-montserrat), "Montserrat", sans-serif;
+  --second-family: "Mariupol", sans-serif;
+  --third-family: var(--font-allura), "Allura", sans-serif;
+
+  /* Legacy variables for compatibility */
+  --background: #fdf7ff;
+  --foreground: #222;
+  --primary: #b094ab;
+  --primary-foreground: #ffffff;
+  --secondary: #f8fafc;
+  --secondary-foreground: #0f172a;
+}
+
+@theme inline {
+  --color-background: var(--bg);
+  --color-foreground: var(--black);
+  --color-primary: var(--purple);
+  --color-primary-foreground: var(--white);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --font-sans: var(--font-family);
+  --font-mono: var(--font-family);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--bg);
+  color: var(--black);
+  font-family: var(--font-family);
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--purple);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--dark-purple);
+}
+
+/* Responsive Padding Classes */
+.responsive-padding-x {
+  padding-left: 108px;
+  padding-right: 108px;
+}
+
+.responsive-padding-y {
+  padding-top: 108px;
+  padding-bottom: 108px;
+}
+
+.responsive-padding-y-small {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+@media (max-width: 1023px) {
+  .responsive-padding-x {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  
+  .responsive-padding-y {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+  
+  .responsive-padding-y-small {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+
+@media (max-width: 767px) {
+  .responsive-padding-x {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  
+  .responsive-padding-y {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+  
+  .responsive-padding-y-small {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}
+
+/* Hero Card Responsive */
+.hero-card {
+  border-radius: 8px;
+  padding: 32px;
+  width: 600px;
+  height: 384px;
+  backdrop-filter: blur(16px);
+  background: rgba(255, 255, 255, 0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.hero-cta-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-social-icons {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.hero-social-icons img {
+  display: block;
+  opacity: 1;
+}
+
+@media (max-width: 767px) {
+  .hero-card {
+    width: 320px;
+   height: 552px;
+    padding: 20px;
+    
+  }
+  
+  .hero-title {
+    /* font-size: 48px !important;
+    line-height: 50% !important; */
+  }
+  
+  .hero-button {
+    width: 100%;
+    height: 36px !important;
+    font-size: 14px !important;
+    padding: 8px 12px !important;
+  }
+  
+  .hero-social-icons {
+    gap: 12px !important;
+  }
+  
+  .hero-social-icons img {
+    width: 20px !important;
+    height: 20px !important;
+    display: block !important;
+    opacity: 1 !important;
+  }
+  
+  .hero-cta-container {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 16px !important;
+  }
+  
+  .hero-social-icons {
+    display: flex !important;
+    gap: 12px !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+}
