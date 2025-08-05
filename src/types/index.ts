@@ -3,7 +3,7 @@ export interface Cake {
     name: string
     description: string
     price: number
-    image: any
+    image: string
     category: 'cheesecake' | 'custom' | 'madeleine'
     fillings?: Filling[]
     weight?: number
@@ -15,7 +15,7 @@ export interface Filling {
     _id: string
     name: string
     description: string
-    image: any
+    image: string
     price: number
     category: string
 }

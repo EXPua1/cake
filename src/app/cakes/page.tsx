@@ -188,7 +188,7 @@ export default function CakesPage() {
                         className="text-3xl md:text-4xl mb-6 text-white"
                         style={{ fontFamily: 'var(--font-allura), "Allura", "Brush Script MT", cursive' }}
                     >
-                        Don't See What You're Looking For?
+                        Don&apos;t See What You&apos;re Looking For?
                     </h2>
                     <p className="text-lg text-gray-300 mb-8 max-w-2xl mx-auto">
                         We specialize in custom cakes for any occasion. Let us create something unique just for you.
